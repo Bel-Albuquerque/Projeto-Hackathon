@@ -17,8 +17,6 @@ async function createImage() {
   document.querySelector('#images').appendChild(image);
 }
 
-createImage();
-
-/* for (index = 0; index <= 9; index += 1) {
+for (index = 0; index <= 19; index += 1) {
   createImage();
-} */
+} 
