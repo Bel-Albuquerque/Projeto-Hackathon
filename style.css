@@ -78,8 +78,7 @@ nav a:hover {
 }
 
 .image {
-  width: 100%;
-  height: 100%;
+  height: 560px;
   float: left;
 }
 
@@ -88,3 +87,16 @@ nav a:hover {
   flex-direction: column;
   width: 50%;
 }
+
+footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+#entradas {
+  display: flex;
+  margin-top: 20px;
+}
+
+
