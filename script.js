@@ -7,6 +7,7 @@ async function fetchImage() {
   return foto[index].download_url;
 }
 
+
 async function createImage() {
   const imageSrc = await fetchImage();
   const image = document.createElement('img');
@@ -16,6 +17,8 @@ async function createImage() {
   document.querySelector('#images').appendChild(image);
 }
 
-for (index = 0; index <= 9; index += 1) {
+createImage();
+
+/* for (index = 0; index <= 9; index += 1) {
   createImage();
-}
+} */
