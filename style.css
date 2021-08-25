@@ -4,7 +4,7 @@
 }
 
 #galery_ {
-  display: none;
+  display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.712);
   width: 100%;
@@ -148,9 +148,12 @@ nav a:hover {
   border-radius: 2px;
 }
 
-#buttonEmail {
+#checkEmail {
+  display: none;
   width: 20px;
   opacity: 0.5;
+  padding-left: 10px;
+  z-index: -1;
 }
 
 #emailConfirmation {

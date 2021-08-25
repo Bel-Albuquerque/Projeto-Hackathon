@@ -17,32 +17,61 @@ async function createImage() {
   document.querySelector('#galery_view').appendChild(image);
 }
 
-for (index = 0; index <= 19; index += 1) {
-  createImage();
-} 
+function criaElementoDiv(nomeId) {
+  const div = document.createElement('div')
+  div.id = nomeId
+  return div
+}
 
+function fecharGaleria() {
+  galery.innerHTML = ''
+ }
+
+function criaBotaoFechar(id, src, alt) {
+const close = document.createElement('img');
+close.id = id
+close.src = src
+close.alt = alt
+close.addEventListener('click', fecharGaleria)
+return close
+}
+
+const galery = document.querySelector('#galery_');
 
 function criarGaleria() {
-  document.querySelector('#galery_').style.display='flex'
+  const caixaButton = criaElementoDiv('caixaBotaoFechar')
+  const divDeEspaço = criaElementoDiv('espacoBotaoFechar')
+  const buttonCose = criaBotaoFechar('close', 'close_111152.png', 'Fechar')
+  const galeryView = criaElementoDiv('galery_view')
+
+  caixaButton.appendChild(divDeEspaço);
+  caixaButton.appendChild(buttonCose);
+  galery.appendChild(caixaButton)
+  galery.appendChild(galeryView)
+  
+  for (index = 0; index <= 19; index += 1) {
+    createImage();
+  } 
 }
 
-document.querySelector("#idGaleria").addEventListener('click', criarGaleria)
+document.querySelector('#idGaleria').addEventListener('click', criarGaleria)
 
-function fechaGaleria() {
-  document.querySelector('#galery_').style.display='none'
-}
-
-document.querySelector('#close').addEventListener('click', fechaGaleria)
+const inputEmail = document.querySelector('#inpuEmail')
+const confirmacaoCadastro =document.querySelector('#emailConfirmation')
+const userEmail = document.querySelector('#UserEmail')
+const check = document.querySelector('#checkEmail')
 
 function confirmarEmail(){
-  document.querySelector('#emailConfirmation').style.display='inline';
-  document.querySelector('#inpuEmail').value=''
-  document.querySelector('#inpuEmail').placeholder='Cadastro confirmado'
+  const email = inputEmail.value
+  inputEmail.style.display ='none'
+  check.style.display='inline';
+  confirmacaoCadastro.style.display='inline';
+  userEmail.innerText = email
 }
 
 document.querySelector('#inpuEmail').addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
      confirmarEmail()
-
   }
 });
+
