@@ -7,7 +7,6 @@ async function fetchImage() {
   return foto[index].download_url;
 }
 
-
 async function createImage() {
   const imageSrc = await fetchImage();
   const image = document.createElement('img');
@@ -74,4 +73,3 @@ document.querySelector('#inpuEmail').addEventListener('keypress', function (e) {
      confirmarEmail()
   }
 });
-
