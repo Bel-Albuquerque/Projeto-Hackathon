@@ -1,0 +1,14 @@
+Your API key: 563492ad6f91700001000001473c4de08f0147c188433f20e4dd7479
+
+https://www.pexels.com/api/new/
+
+API_KEY=<563492ad6f91700001000001473c4de08f0147c188433f20e4dd7479> yarn test
+
+curl -H  "Autorização: 563492ad6f91700001000001473c4de08f0147c188433f20e4dd7479 "  \ 
+  "https://api.pexels.com/v1/search?query=people"
+
+
+vimeo
+d7db9eafd05c336f04abab324647e88e227a9f41
+vimeo_token 
+dc958891066f62e1dbba8d8a35efaeeb

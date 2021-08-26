@@ -3,6 +3,60 @@
   padding: 0;
 }
 
+#galery_ {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.712);
+  width: 100%;
+  position: absolute;
+}
+
+#caixaBotaoFechar {
+  height: 55px;
+  display: flex;
+}
+
+#espacoBotaoFechar {
+  width: 90%;
+}
+
+#close {
+  height: 40px;
+  width: 40px;
+  align-self: center;
+}
+
+#close:hover {
+  width: 45px;
+  height: 45px;
+}
+
+#galery_view {
+  align-self: center;
+  padding:2%;
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: rgb(8, 8, 8);
+  border-radius: 4px;
+
+}
+
+.image_galery {
+  width: 250px;
+  height: 150px;
+}
+
+.image_galery:hover {
+  /* width: 300px;
+  height: 200px; */
+  transition: 1s;
+  transform: scale(2.5);
+  z-index: 1;
+}
+
+
 body {
   font-family: 'poppins';
   color: rgb(122, 122, 122);
@@ -37,9 +91,7 @@ nav a:hover {
 }
 
 #principal {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 25% 30% 15% 30%;
+  display: flex;
   max-height: 100vh;
   height: 800px;
 }
@@ -67,7 +119,7 @@ nav a:hover {
   height: 100%;
   /* background-color: rgba(141, 140, 140, 0.171); */
   display: flex;
-  flex-flow: row wrap;
+  justify-content:flex-end ;
 }
 
 .image {
@@ -78,14 +130,35 @@ nav a:hover {
 #div-coluna {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin-left: 30px;
 }
 
+#inpuEmail {
+  padding: 10px 90px;
+  border: 1px solid gray;
+  border-radius: 40px 0 0 40px;
+  font-family: 'poppins';
+}
+
+#checkEmail {
+  display: none;
+  width: 20px;
+  height: 20px;
+  opacity: 0.5;
+  padding-left: 10px;
+  z-index: -1;
+}
+
+#emailConfirmation {
+  font-size: 10px;
+  display: none;
+}
+
 footer {
-  margin-top: 120px;
+  margin-top: 80px;
   width: 100%;
-  margin-left: 40px;
+  margin-left: 80px;
 }
 
 #entradas {
@@ -109,3 +182,13 @@ button {
   color: white;
 }
 
+#img {
+  height: 100%;
+}
+
+#home-image {
+  display: grid;
+  max-height: 100vh;
+  max-width: 100vh;
+
+}
