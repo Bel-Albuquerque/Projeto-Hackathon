@@ -24,7 +24,7 @@ function criaElementoDiv(nomeId) {
 
 function fecharGaleria() {
   galery.innerHTML = ''
- }
+}
 
 function criaBotaoFechar(id, src, alt) {
 const close = document.createElement('img');
@@ -47,10 +47,10 @@ function criarGaleria() {
   caixaButton.appendChild(buttonCose);
   galery.appendChild(caixaButton)
   galery.appendChild(galeryView)
-  
+
   for (index = 0; index <= 19; index += 1) {
     createImage();
-  } 
+  }
 }
 
 document.querySelector('#idGaleria').addEventListener('click', criarGaleria)
@@ -59,6 +59,7 @@ const inputEmail = document.querySelector('#inpuEmail')
 const confirmacaoCadastro =document.querySelector('#emailConfirmation')
 const userEmail = document.querySelector('#UserEmail')
 const check = document.querySelector('#checkEmail')
+const buttonEmail = document.querySelector('#sendButton')
 
 function confirmarEmail(){
   const email = inputEmail.value
@@ -66,10 +67,13 @@ function confirmarEmail(){
   check.style.display='inline';
   confirmacaoCadastro.style.display='inline';
   userEmail.innerText = email
+  buttonEmail.style.display = 'none';
 }
 
 document.querySelector('#inpuEmail').addEventListener('keypress', function (e) {
   if (e.key === 'Enter') {
-     confirmarEmail()
+    confirmarEmail()
   }
 });
+
+buttonEmail.addEventListener('click', confimrarEmail);
