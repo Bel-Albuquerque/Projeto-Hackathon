@@ -4,14 +4,16 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'poppins';
   color: rgb(122, 122, 122);
 }
 
 #header {
-  /* display: flex; */
+  display: flex;
+  flex-direction: row;
   width: 100%;
   background-color: rgba(0, 255, 255, 0);
+  padding: 20px;
 }
 
 nav {
@@ -20,18 +22,14 @@ nav {
   padding: 15px;
 }
 
-#div-links {
-  align-self: center;
-}
-
-nav img {
-  margin-right: 150px;
-}
-
 nav a {
+  font-family: 'poppins';
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-left: 10px;
   padding: 5px;
   text-decoration: none;
-  color: black;
+  color: rgb(56, 56, 56);
 }
 
 nav a:hover {
@@ -39,34 +37,29 @@ nav a:hover {
 }
 
 #principal {
-  display: flex;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 30% 15% 30%;
+  max-height: 100vh;
+  height: 800px;
 }
 
 #content {
-  display: flex;
-  width: 80%;
-  padding: 30px;
-  flex-direction: column;
+  margin-left: 40px;
 }
 
 #content h1 {
+  margin-top: 90px;
   font-size: 40px;
   width: 100%;
 }
 
 #content p {
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
   line-height: 1.4em;
   font-weight: 200;
   font-style: italic;
-}
-
-#home-image {
-  display: flex;
-  height: 100%;
-  width: 50%;
 }
 
 #images {
@@ -85,13 +78,14 @@ nav a:hover {
 #div-coluna {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 80%;
+  margin-left: 30px;
 }
 
 footer {
-  bottom: 0;
+  margin-top: 120px;
   width: 100%;
-  position: fixed;
+  margin-left: 40px;
 }
 
 #entradas {
@@ -99,7 +93,19 @@ footer {
   margin-top: 20px;
 }
 
-#img {
-  height: 100%;
+input{
+  padding: 10px 90px;
+  border: 1px solid gray;
+  border-radius: 40px 0 0 40px;
+  font-family: 'poppins';
+}
+
+button {
+  padding: 0px 25px;
+  border: transparent;
+  border-radius: 0 40px 40px 0;
+  font-family: 'poppins';
+  background-color: rgb(80, 79, 79);
+  color: white;
 }
 

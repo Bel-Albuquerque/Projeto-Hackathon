@@ -19,4 +19,4 @@ async function createImage() {
 
 for (index = 0; index <= 19; index += 1) {
   createImage();
-} 
+}
