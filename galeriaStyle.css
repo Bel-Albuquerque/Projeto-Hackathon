@@ -1,35 +1,77 @@
-/* *{
+*{
   margin:0;
   padding: 0;
-} */
+}
 
 body {
+  min-height: 500px;
   background-color: #c7c7c7;
+  display: flex;
+  justify-content: center;
   }
 
-#images {
+#videos {
   margin: auto;
   width: 100%;
   height: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  
+  justify-content: center;  
 }
 
-.image {
+.video_galery {
   width: 250px;
   height: 150px;
   opacity: 0.8;
   
 }
 
-.image:hover {
+.video_galery:hover {
   opacity: 1;
-  /* width: 300px;
-  height: 200px; */
-  transition: 1s;
-  transform: scale(2.5);
+  
+}
+
+#player {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.788);
+  width: 100%;
+  height: 100%;
+  position: absolute;
   z-index: 1;
 }
 
+
+#caixaBotaoFechar {
+  height: 55px;
+  display: flex;
+  z-index: 1;
+}
+
+#espacoBotaoFechar {
+  width: 90%;
+}
+
+#close {
+  height: 40px;
+  width: 40px;
+  align-self: center;
+}
+
+#close:hover {
+  width: 45px;
+  height: 45px;
+}
+
+#player_view {
+  align-self: center;
+  padding:2%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.videoExibido {
+  align-self: center;
+}

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div id="galery_"></div>
   <main id="principal">
     <div id='div-coluna'>
       <header id="header">
@@ -20,18 +21,19 @@
           <div id = 'div-links'>
             <a href="">Home</a>
             <a href="">Sobre</a>
-            <a href="http://127.0.0.1:5500/galeria.html">Galeria Alunos</a>
+            <a id="idGaleria">Galeria Alunos</a>
           </div>
         </nav>
       </header>
 
       <section id="content">
-        <h1> Bem-vindo a escola de fotografia</h1>
+        <h1> Bem-vindo à escola de fotografia</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed molestie erat, eget accumsan nunc. </p>
         <div id = "entradas">
-          <input placeholder="Digite seu email"> 
-          <button>Enviar</button>
+          <span id="UserEmail"></span><input type="email" placeholder="email@email.com" id="inpuEmail">
+          <img id="checkEmail" src="pngegg.png" alt="">
         </div>
+        <div id="emailConfirmation">Bem-vindo! Você acaba de se inscrever em nossa newsletter!</div>
       </section>
     </div>
     <section id="home-image">
@@ -41,7 +43,7 @@
   <footer>
     Hackathon Trybe
   </footer>
-  <!-- <script src='script.js'></script> -->
+  <script src='script.js'></script>
 </body>
 
 </html>

@@ -3,6 +3,60 @@
   padding: 0;
 }
 
+#galery_ {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.712);
+  width: 100%;
+  position: absolute;
+}
+
+#caixaBotaoFechar {
+  height: 55px;
+  display: flex;
+}
+
+#espacoBotaoFechar {
+  width: 90%;
+}
+
+#close {
+  height: 40px;
+  width: 40px;
+  align-self: center;
+}
+
+#close:hover {
+  width: 45px;
+  height: 45px;
+}
+
+#galery_view {
+  align-self: center;
+  padding:2%;
+  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: rgb(8, 8, 8);
+  border-radius: 4px;
+  
+}
+
+.image_galery {
+  width: 250px;
+  height: 150px;  
+}
+
+.image_galery:hover {
+  /* width: 300px;
+  height: 200px; */
+  transition: 1s;
+  transform: scale(2.5);
+  z-index: 1;
+}
+
+
 body {
   font-family: sans-serif;
   color: rgb(122, 122, 122);
@@ -86,6 +140,25 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+
+#inpuEmail {
+  width: 45%;
+  border: 1px solid rgb(122, 122, 122);
+  border-radius: 2px;
+}
+
+#checkEmail {
+  display: none;
+  width: 20px;
+  opacity: 0.5;
+  padding-left: 10px;
+  z-index: -1;
+}
+
+#emailConfirmation {
+  font-size: 10px;
+  display: none;
 }
 
 footer {
