@@ -1,0 +1,23 @@
+{
+  "name": "projeto-hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "galeria.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianaBraga/Projeto-Hackathon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianaBraga/Projeto-Hackathon/issues"
+  },
+  "homepage": "https://github.com/JulianaBraga/Projeto-Hackathon#readme",
+  "devDependencies": {
+    "jest": "^27.1.0"
+  }
+}
